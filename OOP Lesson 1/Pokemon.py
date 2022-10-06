@@ -11,14 +11,17 @@ class Pokemon:
 
     # Contructor
     def __init__(this, name, entryNumber):
-        this.name = name
-        this.entryNumber = entryNumber
+        this.name = name # Setting the pokemon object name.
+        this.entryNumber = entryNumber # setting the pokemon object entry number
 
 
     # Begin Methods Section =============================== # 
+    
+    # increases the Pokemon's level by 1... could rework in the future to account for experience needed to level up.
     def levelUp(this):
-        this.level += 1
+        this.level += 1 
         
+    # Prints the Pokemon's Information
     def printPokemonInfo(this):
         print("\n# ====================== #")
         print("Pokemon name: " + str(this.name))
